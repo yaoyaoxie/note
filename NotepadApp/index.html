@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>记事本</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>记事本</h1>
+            <label for="date">选择日期:</label>
+            <input type="date" id="date" name="date">
+            <textarea id="note" placeholder="在此输入您的记事..."></textarea>
+            <button id="saveButton">保存</button>
+            <button id="viewLogButton">查看日志</button>
+            <button id="deleteLogButton">删除当前日志</button>
+            <button id="clearStorageButton">清空所有数据</button>
+        </div>
+        <div class="log-container" id="logContainer">
+            <h2>历史日志</h2>
+            <div id="logContent"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
